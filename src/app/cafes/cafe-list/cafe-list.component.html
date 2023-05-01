@@ -1,0 +1,37 @@
+<div class="container-fluid">
+  <img src="../../../assets/banner.png" alt="cafe" style="margin: 0% 0% 2% 1%;">
+  <div class="table-cafe">
+    <div class="col-6">
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th class="h4">#</th>
+            <th class="h4">Nombre</th>
+            <th class="h4">Tipo</th>
+            <th class="h4">Región</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let c of cafes">
+            <td>
+              <dd>{{c.id}}</dd>
+            </td>
+            <td>
+              <dd>{{c.nombre}}</dd>
+            </td>
+            <td>
+              <dd>{{c.tipo}}</dd>
+            </td>
+            <td>
+              <dd>{{c.region}}</dd>
+            </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div style="margin: 0% 0% 2% 1%;">
+    <p>Total café de origen : {{ cafeBlend }}</p>
+    <p>Total café blend : {{ cafeOrigen}}</p>
+  </div>
+</div>
