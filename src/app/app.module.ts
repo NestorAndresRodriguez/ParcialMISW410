@@ -6,9 +6,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { CafesModule } from './cafes/cafes.module';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [			
+    AppComponent,
+   ],
   imports: [
     BrowserModule,
     HttpClientModule,
